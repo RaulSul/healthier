@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LandingPageViewController.swift
 //  HealthierApp
 //
 //  Created by Raul Sulaimanov on 10.08.21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LandingPageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

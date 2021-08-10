@@ -9,11 +9,15 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
+    static weak var shared: AppDelegate!
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        AppDelegate.shared = self
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window!.backgroundColor = .black
+        window!.makeKeyAndVisible()
         return true
     }
 
